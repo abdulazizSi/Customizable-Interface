@@ -13,6 +13,8 @@
 		896AF6B02AE404FE00B8F3C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896AF6AF2AE404FE00B8F3C7 /* Assets.xcassets */; };
 		896AF6B32AE404FE00B8F3C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896AF6B12AE404FE00B8F3C7 /* LaunchScreen.storyboard */; };
 		896AF6BC2AE407CE00B8F3C7 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF6BB2AE407CE00B8F3C7 /* GenericViewController.swift */; };
+		896AF6C82AE409F200B8F3C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF6C72AE409F200B8F3C7 /* HomeView.swift */; };
+		896AF6CC2AE40BF800B8F3C7 /* UIView-layoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF6CB2AE40BF800B8F3C7 /* UIView-layoutConstraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		896AF6B22AE404FE00B8F3C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896AF6B42AE404FE00B8F3C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896AF6BB2AE407CE00B8F3C7 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		896AF6C72AE409F200B8F3C7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		896AF6CB2AE40BF800B8F3C7 /* UIView-layoutConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-layoutConstraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			children = (
 				896AF6A62AE404FC00B8F3C7 /* AppDelegate.swift */,
 				896AF6A82AE404FC00B8F3C7 /* SceneDelegate.swift */,
+				896AF6CA2AE40BC000B8F3C7 /* Extensions */,
 				896AF6BA2AE407B600B8F3C7 /* Classes */,
 				896AF6C22AE408E100B8F3C7 /* Models */,
 				896AF6BD2AE4085F00B8F3C7 /* Views */,
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				896AF6AA2AE404FC00B8F3C7 /* HomeViewController.swift */,
+				896AF6C72AE409F200B8F3C7 /* HomeView.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -97,6 +103,14 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		896AF6CA2AE40BC000B8F3C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				896AF6CB2AE40BF800B8F3C7 /* UIView-layoutConstraints.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +186,8 @@
 				896AF6AB2AE404FC00B8F3C7 /* HomeViewController.swift in Sources */,
 				896AF6A72AE404FC00B8F3C7 /* AppDelegate.swift in Sources */,
 				896AF6BC2AE407CE00B8F3C7 /* GenericViewController.swift in Sources */,
+				896AF6CC2AE40BF800B8F3C7 /* UIView-layoutConstraints.swift in Sources */,
+				896AF6C82AE409F200B8F3C7 /* HomeView.swift in Sources */,
 				896AF6A92AE404FC00B8F3C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
