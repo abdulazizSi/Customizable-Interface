@@ -7,14 +7,32 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-
+class HomeViewController: ViewController<HomeView> {
+    
+    //MARK: - Properties
+    
+    private let viewModel: HomeViewModel = HomeViewModel()
+    
+    
+    
+    //MARK: - Lifecycle
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mainView.collectionView.delegate = self
         
+        mainView.collectionView.collectionViewLayout = viewModel.createLayout()
         
+        viewModel.createDataSource(collectionView: mainView.collectionView)
     }
-
+    
+    
 }
 
+
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.didSelectItem(at: indexPath)
+    }
+}
