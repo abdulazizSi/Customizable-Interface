@@ -58,19 +58,19 @@ class HomeViewModel {
         guard let data else {return}
         
         if data.categories.isEmptyOrNil {
-            sections.append(ProductsSection(type: .categories))
+            sections.append(CategoriesSection())
         }
         
         if data.stores.isEmptyOrNil {
-            sections.append(ProductsSection(type: .stores))
+            sections.append(StoresSection())
         }
             
         if data.offers.isEmptyOrNil {
-            sections.append(ProductsSection(type: .offers))
+            sections.append(OffersSection())
         }
         
         if data.promotedSection != nil {
-            sections.append(ProductsSection(type: .promotedSection))
+            sections.append(PromotedSection())
         }
         
         if let dynamicSections = data.dynamicSections {
