@@ -78,57 +78,57 @@
         {
             "id": 1,
             "name": "boyner",
-            "img": "boyner"
+            "img": "store3"
         },
         {
             "id": 2,
             "name": "defacto",
-            "img": "defacto"
+            "img": "store9"
         },
         {
             "id": 3,
             "name": "samsung",
-            "img": "samsung"
+            "img": "store5"
         },
         {
             "id": 4,
             "name": "xiaomi",
-            "img": "xiaomi"
+            "img": "store4"
         },
         {
             "id": 5,
             "name": "ebebek",
-            "img": "ebebek"
+            "img": "store2"
         },
         {
             "id": 6,
             "name": "sutas",
-            "img": "sutas"
+            "img": "store6"
         },
         {
             "id": 7,
             "name": "avon",
-            "img": "avon"
+            "img": "store7"
         },
         {
             "id": 8,
             "name": "civil",
-            "img": "civil"
+            "img": "store8"
         },
         {
             "id": 9,
             "name": "aker",
-            "img": "aker"
+            "img": "store1"
         },
         {
             "id": 10,
             "name": "mavi",
-            "img": "mavi"
+            "img": "store10"
         },
         {
             "id": 11,
             "name": "derimod",
-            "img": "derimod"
+            "img": "store11"
         }
     ],
     
