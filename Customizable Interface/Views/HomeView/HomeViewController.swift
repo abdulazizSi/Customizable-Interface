@@ -25,6 +25,8 @@ class HomeViewController: ViewController<HomeView> {
         mainView.collectionView.collectionViewLayout = viewModel.createLayout()
         
         viewModel.createDataSource(collectionView: mainView.collectionView)
+        
+        dump(viewModel.data)
     }
     
     

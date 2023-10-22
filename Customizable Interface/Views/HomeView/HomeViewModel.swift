@@ -11,11 +11,11 @@ class HomeViewModel {
     
     //MARK: - Properties
     
-    let data: HomeModel? = nil
+    private(set) var data: HomeModel = Bundle.main.decode(HomeModel.self, from: "HomeModelData.json")
     
-    var sections: [HomeLayoutSection] = []
+    private(set) var sections: [HomeLayoutSection] = []
     
-    var datasource: UICollectionViewDiffableDataSource<HomeSection, HomeSectionItemWarper>!
+    private(set) var datasource: UICollectionViewDiffableDataSource<HomeSection, HomeSectionItemWarper>!
     
     
     //MARK: - Functions
@@ -55,22 +55,20 @@ class HomeViewModel {
  
     /// Reload sections data
     private func reloadSections() {
-        guard let data else {return}
-        
-        if data.categories.isEmptyOrNil {
-            sections.append(CategoriesSection())
+        if data.mainMenu.isEmptyOrNil {
+            sections.append(MenuSection())
         }
-        
-        if data.stores.isEmptyOrNil {
-            sections.append(StoresSection())
+
+        if data.promotedSection != nil {
+            sections.append(PromotedSection())
         }
-            
+                    
         if data.offers.isEmptyOrNil {
             sections.append(OffersSection())
         }
         
-        if data.promotedSection != nil {
-            sections.append(PromotedSection())
+        if data.stores.isEmptyOrNil {
+            sections.append(StoresSection())
         }
         
         if let dynamicSections = data.dynamicSections {
@@ -78,7 +76,7 @@ class HomeViewModel {
                 switch section.type {
                 case .products:
                     sections.append(ProductsSection(type: .products(id: section.id)))
-                case .banner:
+                case .banners:
                     sections.append(BannersSection(type: .banners(id: section.id)))
                 }
             }            
@@ -88,40 +86,40 @@ class HomeViewModel {
     }
     
     /// Reload data source
-    func reloadData() {
+    private func reloadData() {
         var snapshot = NSDiffableDataSourceSnapshot<HomeSection, HomeSectionItemWarper>()
         
         sections.forEach { section in
             switch section.type {
-            case .categories:
-                guard let mainCategories = data?.categories else {return}
+            case .mainMenu:
+                guard let menu = data.mainMenu else {return}
                 snapshot.appendSections([section.type])
-                snapshot.appendItems(mainCategories.map{.category($0)}, toSection: section.type)
+                snapshot.appendItems(menu.map{.menuItem($0)}, toSection: section.type)
                 
             case .stores:
-                guard let categories = data?.categories else {return}
+                guard let stores = data.stores else {return}
                 snapshot.appendSections([section.type])
-                snapshot.appendItems(categories.map{.category($0)}, toSection: section.type)
+                snapshot.appendItems(stores.map{.store($0)}, toSection: section.type)
                 
             case .offers:
-                guard let categories = data?.categories else {return}
+                guard let offers = data.offers else {return}
                 snapshot.appendSections([section.type])
-                snapshot.appendItems(categories.map{.category($0)}, toSection: section.type)
+                snapshot.appendItems(offers.map{.menuItem($0)}, toSection: section.type)
                 
             case .promotedSection:
-                guard let categories = data?.categories else {return}
+                guard let promotedSection = data.promotedSection else {return}
                 snapshot.appendSections([section.type])
-                snapshot.appendItems(categories.map{.category($0)}, toSection: section.type)
+                snapshot.appendItems([.menuItem(promotedSection)], toSection: section.type)
                 
             case .banners(let id):
-                guard let bannersSection = data?.dynamicSections?.first(where: { $0.id == id}),
+                guard let bannersSection = data.dynamicSections?.first(where: { $0.id == id}),
                       let banners = bannersSection.banners
                 else {return}
                 snapshot.appendSections([section.type])
-                snapshot.appendItems(banners.map{.banner($0)}, toSection: section.type)
+                snapshot.appendItems(banners.map{.menuItem($0)}, toSection: section.type)
                 
             case .products(let id):
-                guard let productsSection = data?.dynamicSections?.first(where: { $0.id == id}),
+                guard let productsSection = data.dynamicSections?.first(where: { $0.id == id}),
                       let products = productsSection.products
                 else {return}
                 snapshot.appendSections([section.type])
@@ -129,6 +127,7 @@ class HomeViewModel {
             }
         }
     }
+    
     
     /// Handle selecting item
     /// - Parameter indexPath: index of the selected item
@@ -142,13 +141,10 @@ class HomeViewModel {
         case let .product(productModel):
             print(productModel) /// Show product details
             
-        case let .category(category):
-            print(category) /// Show category details
-            
         case let .store(store):
             print(store) /// Show store details
             
-        case let .banner(banner):
+        case let .menuItem(banner):
             print(banner) /// Show banner details
         }
     }

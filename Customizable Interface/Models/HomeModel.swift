@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct HomeModel {
+struct HomeModel: Decodable {
     /// Static Sections
     /// you can move any of this sections inside the dynamic sections and create a new type
-    let categories: [CategoryModel]?
+    let mainMenu: [MenuItemModel]?
     
     let stores: [StoreModel]?
         
-    let offers: [BannerModel]?
+    let offers: [MenuItemModel]?
     
-    let promotedSection: BannerModel?
+    let promotedSection: MenuItemModel?
     
     
     

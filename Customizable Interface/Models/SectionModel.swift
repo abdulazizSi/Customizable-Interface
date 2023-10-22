@@ -7,19 +7,19 @@
 
 import Foundation
 
-struct SectionModel {
-    let type: SectionType
-    
+struct SectionModel: Decodable, Hashable {
     let id: Int
+    
+    let type: SectionType
     
     let title: String
     
     let products: [ProductModel]?
     
-    let banners: [BannerModel]?
+    let banners: [MenuItemModel]?
 }
 
-enum SectionType {
+enum SectionType: String, Decodable {
     case products
-    case banner
+    case banners
 }

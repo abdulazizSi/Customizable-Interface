@@ -25,7 +25,7 @@ struct PromotedSection: HomeLayoutSection {
     
     
     let cellRegistration = UICollectionView.CellRegistration<UICollectionViewCell, HomeSectionItemWarper> { cell, indexPath, itemIdentifier in
-        if case .banner(let banner) = itemIdentifier {
+        if case .menuItem(let banner) = itemIdentifier {
             
         }
     }

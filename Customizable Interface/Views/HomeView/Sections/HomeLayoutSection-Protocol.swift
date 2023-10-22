@@ -25,17 +25,16 @@ extension HomeLayoutSection {
 }
 
 enum HomeSection: Hashable {
-    case categories
-    case stores
-    case offers
+    case mainMenu
     case promotedSection
+    case offers
+    case stores
     case products(id: Int)
     case banners(id: Int)
 }
 
 enum HomeSectionItemWarper: Hashable {
-    case category(CategoryModel)
     case store(StoreModel)
     case product(ProductModel)
-    case banner(BannerModel)
+    case menuItem(MenuItemModel)
 }

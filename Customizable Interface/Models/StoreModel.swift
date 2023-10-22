@@ -7,14 +7,10 @@
 
 import Foundation
 
-struct StoreModel: Hashable {
+struct StoreModel: Decodable, Hashable {
     let id: Int
     
     let name: String
     
     let img: String
-    
-    let url: String
-    
-    let categories: [CategoryModel]
 }

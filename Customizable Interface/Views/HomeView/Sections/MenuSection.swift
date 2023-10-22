@@ -9,7 +9,7 @@ import UIKit
 
 struct MenuSection: HomeLayoutSection {
     
-    var type: HomeSection = .categories
+    var type: HomeSection = .mainMenu
     
     var layoutSection: NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
@@ -25,7 +25,7 @@ struct MenuSection: HomeLayoutSection {
     
     
     let cellRegistration = UICollectionView.CellRegistration<UICollectionViewCell, HomeSectionItemWarper> { cell, indexPath, itemIdentifier in
-        if case .category(let category) = itemIdentifier {
+        if case .menuItem(let banner) = itemIdentifier {
             
         }
     }

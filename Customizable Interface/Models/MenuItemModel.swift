@@ -14,10 +14,11 @@ struct MenuItemModel: Decodable, Hashable {
     
     let img: String
     
-    let action: BannerActionTypes
+    let action: MenuItemActionType
 }
 
-enum BannerActionTypes: String, Decodable {
+enum MenuItemActionType: String, Decodable {
+    case categories
     case category
     case store
     case product

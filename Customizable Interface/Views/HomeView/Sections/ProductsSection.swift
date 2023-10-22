@@ -25,7 +25,7 @@ struct ProductsSection: HomeLayoutSection {
     
     
     let cellRegistration = UICollectionView.CellRegistration<UICollectionViewCell, HomeSectionItemWarper> { cell, indexPath, itemIdentifier in
-        if case .banner(let banner) = itemIdentifier {
+        if case .product(let product) = itemIdentifier {
             
         }
     }
