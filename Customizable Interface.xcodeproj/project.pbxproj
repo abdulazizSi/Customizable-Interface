@@ -202,8 +202,8 @@
 		896AF6F62AE5383500B8F3C7 /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
-				896AF7122AE5782000B8F3C7 /* ProductCell */,
 				896AF70B2AE572B700B8F3C7 /* TitleHeader */,
+				896AF7122AE5782000B8F3C7 /* ProductCell */,
 				896AF7062AE56E0000B8F3C7 /* StoreCell */,
 				896AF7012AE5678400B8F3C7 /* BannerCell */,
 				896AF6F72AE5389C00B8F3C7 /* MenuItemCell */,
