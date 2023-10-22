@@ -14,13 +14,11 @@ class HomeViewController: ViewController<HomeView> {
     private let viewModel: HomeViewModel = HomeViewModel()
     
     
-    
     //MARK: - Lifecycle
         
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Pazarama"
         setupNavLogo()
         
         navigationItem.searchController = mainView.searchController
@@ -37,6 +35,7 @@ class HomeViewController: ViewController<HomeView> {
         
     }
     
+    //MARK: - Functions
     
     private func setupNavLogo() {
         let logo = UIImageView(image: .pazaramaLogo)
@@ -45,8 +44,7 @@ class HomeViewController: ViewController<HomeView> {
                 
         let customView = UIView(frame: navigationController?.navigationBar.frame ?? .zero)
         customView.addSubview(logo)
-        logo.frame = .init(x: 4,
-                           y: 0,
+        logo.frame = .init(x: 4, y: 0,
                            width: 150,
                            height: customView.frame.height)
                 
