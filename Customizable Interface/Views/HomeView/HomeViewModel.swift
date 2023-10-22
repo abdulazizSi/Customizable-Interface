@@ -66,7 +66,7 @@ class HomeViewModel {
         }
                     
         if !data.offers.isEmptyOrNil {
-            sections.append(OffersSection())
+            sections.append(OffersSection(type: .offers, numberOfItems: data.offers?.count ?? 0))
         }
         
         if !data.stores.isEmptyOrNil {
