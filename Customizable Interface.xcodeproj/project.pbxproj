@@ -39,6 +39,9 @@
 		896AF7052AE567DD00B8F3C7 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF7042AE567DD00B8F3C7 /* BannerCell.swift */; };
 		896AF7082AE56E0700B8F3C7 /* StoreCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF7072AE56E0700B8F3C7 /* StoreCellView.swift */; };
 		896AF70A2AE56E4B00B8F3C7 /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF7092AE56E4B00B8F3C7 /* StoreCell.swift */; };
+		896AF70D2AE572C100B8F3C7 /* TitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF70C2AE572C100B8F3C7 /* TitleHeaderView.swift */; };
+		896AF70F2AE5731700B8F3C7 /* TitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF70E2AE5731700B8F3C7 /* TitleHeader.swift */; };
+		896AF7112AE5762F00B8F3C7 /* UIImage-resizeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF7102AE5762F00B8F3C7 /* UIImage-resizeImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		896AF7042AE567DD00B8F3C7 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
 		896AF7072AE56E0700B8F3C7 /* StoreCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCellView.swift; sourceTree = "<group>"; };
 		896AF7092AE56E4B00B8F3C7 /* StoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCell.swift; sourceTree = "<group>"; };
+		896AF70C2AE572C100B8F3C7 /* TitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderView.swift; sourceTree = "<group>"; };
+		896AF70E2AE5731700B8F3C7 /* TitleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeader.swift; sourceTree = "<group>"; };
+		896AF7102AE5762F00B8F3C7 /* UIImage-resizeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-resizeImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,7 @@
 				896AF6CB2AE40BF800B8F3C7 /* UIView-layoutConstraints.swift */,
 				896AF6E12AE4399600B8F3C7 /* Optional-isEmptyOrNil.swift */,
 				896AF6EF2AE48BF700B8F3C7 /* Bundle-decode.swift */,
+				896AF7102AE5762F00B8F3C7 /* UIImage-resizeImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 		896AF6F62AE5383500B8F3C7 /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				896AF70B2AE572B700B8F3C7 /* TitleHeader */,
 				896AF7062AE56E0000B8F3C7 /* StoreCell */,
 				896AF7012AE5678400B8F3C7 /* BannerCell */,
 				896AF6F72AE5389C00B8F3C7 /* MenuItemCell */,
@@ -223,6 +231,15 @@
 				896AF7092AE56E4B00B8F3C7 /* StoreCell.swift */,
 			);
 			path = StoreCell;
+			sourceTree = "<group>";
+		};
+		896AF70B2AE572B700B8F3C7 /* TitleHeader */ = {
+			isa = PBXGroup;
+			children = (
+				896AF70C2AE572C100B8F3C7 /* TitleHeaderView.swift */,
+				896AF70E2AE5731700B8F3C7 /* TitleHeader.swift */,
+			);
+			path = TitleHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				896AF7032AE5678F00B8F3C7 /* BannerCellView.swift in Sources */,
+				896AF70D2AE572C100B8F3C7 /* TitleHeaderView.swift in Sources */,
 				896AF6AB2AE404FC00B8F3C7 /* HomeViewController.swift in Sources */,
 				896AF6DE2AE41FC800B8F3C7 /* HomeLayoutSection-Protocol.swift in Sources */,
 				896AF70A2AE56E4B00B8F3C7 /* StoreCell.swift in Sources */,
@@ -318,6 +336,8 @@
 				896AF6E02AE4235600B8F3C7 /* ProductsSection.swift in Sources */,
 				896AF6F02AE48BF700B8F3C7 /* Bundle-decode.swift in Sources */,
 				896AF6C82AE409F200B8F3C7 /* HomeView.swift in Sources */,
+				896AF7112AE5762F00B8F3C7 /* UIImage-resizeImage.swift in Sources */,
+				896AF70F2AE5731700B8F3C7 /* TitleHeader.swift in Sources */,
 				896AF6EE2AE483E100B8F3C7 /* PromotedSection.swift in Sources */,
 				896AF6EC2AE4838900B8F3C7 /* OffersSection.swift in Sources */,
 				896AF6E42AE47F6900B8F3C7 /* BannersSection.swift in Sources */,

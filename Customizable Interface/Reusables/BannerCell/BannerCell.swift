@@ -8,9 +8,9 @@
 import UIKit
 
 class BannerCell: CollectionViewCell<BannerCellView> {
-    
     func configure(_ data: MenuItemModel) {
-        mainView.imageView.image = .init(named: data.img)
+        let image = UIImage(named: data.img)?.resizeImage(targetSize: contentView.bounds.size)
+        mainView.imageView.image = image
     }
     
 }

@@ -9,6 +9,7 @@ import UIKit
 
 class StoreCell: CollectionViewCell<StoreCellView> {
     func configure(_ store: StoreModel) {
-        mainView.imageView.image = .init(named: store.img)
+        let image = UIImage(named: store.img)?.resizeImage(targetSize: contentView.bounds.size)
+        mainView.imageView.image = image
     }
 }
