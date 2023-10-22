@@ -12,7 +12,7 @@ struct BannersSection: HomeLayoutSection {
     var type: HomeSection
     
     var layoutSection: NSCollectionLayoutSection {
-        let height = NSCollectionLayoutDimension.absolute(190)
+        let height = NSCollectionLayoutDimension.absolute(180)
         
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: height)
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
@@ -22,14 +22,15 @@ struct BannersSection: HomeLayoutSection {
         
         let section = NSCollectionLayoutSection(group: group)
         section.contentInsets = .init(top: 0, leading: 16, bottom: 0, trailing: 16)
+        section.interGroupSpacing = 6
         
         return section
     }
     
     
-    let cellRegistration = UICollectionView.CellRegistration<UICollectionViewCell, HomeSectionItemWarper> { cell, indexPath, itemIdentifier in
-        if case .menuItem(let product) = itemIdentifier {
-            
+    let cellRegistration = UICollectionView.CellRegistration<BannerCell, HomeSectionItemWarper> { cell, indexPath, itemIdentifier in
+        if case .menuItem(let banner) = itemIdentifier {
+            cell.configure(banner)
         }
     }
     

@@ -136,7 +136,19 @@
         {
             "id": 1,
             "name": "offer1",
-            "img": "img",
+            "img": "banner1",
+            "action": "store"
+        },
+        {
+            "id": 2,
+            "name": "offer1",
+            "img": "banner12",
+            "action": "store"
+        },
+        {
+            "id": 3,
+            "name": "offer1",
+            "img": "banner5",
             "action": "store"
         }
     ],
@@ -144,7 +156,7 @@
     "promotedSection": {
         "id": 1,
         "name": "promotedSection",
-        "img": "img",
+        "img": "imgPro",
         "action": "store"
     },
     
@@ -227,12 +239,6 @@
             "type": "banners",
             "title": "Banner Section1",
             "banners": [
-                {
-                    "id": 1,
-                    "name": "",
-                    "img": "banner1",
-                    "action": "store"
-                },
                 {
                     "id": 2,
                     "name": "",

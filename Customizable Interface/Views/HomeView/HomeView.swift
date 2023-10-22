@@ -20,6 +20,8 @@ class HomeView: UIView {
         return collectionView
     }()
     
+    let searchController = UISearchController()
+    
     
     //MARK: - Initialization
     

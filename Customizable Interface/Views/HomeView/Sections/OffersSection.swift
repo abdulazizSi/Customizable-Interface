@@ -12,21 +12,26 @@ struct OffersSection: HomeLayoutSection {
     var type: HomeSection = .offers
     
     var layoutSection: NSCollectionLayoutSection {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+        let height = NSCollectionLayoutDimension.absolute(180)
+        
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: height)
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(40))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: height)
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         
         let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .groupPagingCentered
         
         return section
     }
     
     
-    let cellRegistration = UICollectionView.CellRegistration<UICollectionViewCell, HomeSectionItemWarper> { cell, indexPath, itemIdentifier in
+    let cellRegistration = UICollectionView.CellRegistration<BannerCell, HomeSectionItemWarper> { cell, indexPath, itemIdentifier in
         if case .menuItem(let banner) = itemIdentifier {
-            
+            cell.configure(banner)
+            cell.mainView.mainVStackView.isLayoutMarginsRelativeArrangement = true
+            cell.mainView.mainVStackView.directionalLayoutMargins = .init(top: 0, leading: 16, bottom: 0, trailing: 16)
         }
     }
     

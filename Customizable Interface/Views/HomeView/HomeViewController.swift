@@ -20,6 +20,14 @@ class HomeViewController: ViewController<HomeView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Pazarama"
+        
+        navigationItem.searchController = mainView.searchController
+        
+        navigationItem.largeTitleDisplayMode = .always
+        navigationItem.hidesSearchBarWhenScrolling = true
+        
+        
         mainView.collectionView.delegate = self
         
         mainView.collectionView.collectionViewLayout = viewModel.createLayout()
@@ -27,6 +35,7 @@ class HomeViewController: ViewController<HomeView> {
         viewModel.createDataSource(collectionView: mainView.collectionView)
         
         dump(viewModel.data)
+        
     }
     
     
