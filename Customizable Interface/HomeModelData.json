@@ -1,0 +1,477 @@
+{
+    "mainMenu": [
+        {
+            "id": 1,
+            "name": "Kategoriler",
+            "img": "menu1",
+            "action": "store"
+        },
+        {
+            "id": 2,
+            "name": "Market",
+            "img": "menu2",
+            "action": "store"
+        },
+        {
+            "id": 3,
+            "name": "Otel - Tatil Uçak - Araç",
+            "img": "menu3",
+            "action": "store"
+        },
+        {
+            "id": 4,
+            "name": "Pazarama Pet",
+            "img": "menu4",
+            "action": "store"
+        },
+        {
+            "id": 5,
+            "name": "Çok Satanlar",
+            "img": "menu5",
+            "action": "store"
+        },
+        {
+            "id": 6,
+            "name": "En Favoriler",
+            "img": "menu6",
+            "action": "store"
+        },
+        {
+            "id": 7,
+            "name": "Pazarama Puan Kazan",
+            "img": "menu7",
+            "action": "store"
+        },
+        {
+            "id": 8,
+            "name": "Hemen Bilet Al",
+            "img": "menu8",
+            "action": "store"
+        },
+        {
+            "id": 9,
+            "name": "Fırsatları Kaçırma!",
+            "img": "menu9",
+            "action": "store"
+        },
+        {
+            "id": 10,
+            "name": "Baby Turco",
+            "img": "menu10",
+            "action": "store"
+        },
+        {
+            "id": 11,
+            "name": "Altınbaş Şıklığı",
+            "img": "menu11",
+            "action": "store"
+        },
+        {
+            "id": 12,
+            "name": "SAMSUNG Fırsatları",
+            "img": "menu12",
+            "action": "store"
+        }
+    ],
+    
+    "stores": [
+        {
+            "id": 1,
+            "name": "boyner",
+            "img": "boyner"
+        },
+        {
+            "id": 2,
+            "name": "defacto",
+            "img": "defacto"
+        },
+        {
+            "id": 3,
+            "name": "samsung",
+            "img": "samsung"
+        },
+        {
+            "id": 4,
+            "name": "xiaomi",
+            "img": "xiaomi"
+        },
+        {
+            "id": 5,
+            "name": "ebebek",
+            "img": "ebebek"
+        },
+        {
+            "id": 6,
+            "name": "sutas",
+            "img": "sutas"
+        },
+        {
+            "id": 7,
+            "name": "avon",
+            "img": "avon"
+        },
+        {
+            "id": 8,
+            "name": "civil",
+            "img": "civil"
+        },
+        {
+            "id": 9,
+            "name": "aker",
+            "img": "aker"
+        },
+        {
+            "id": 10,
+            "name": "mavi",
+            "img": "mavi"
+        },
+        {
+            "id": 11,
+            "name": "derimod",
+            "img": "derimod"
+        }
+    ],
+    
+    "offers": [
+        {
+            "id": 1,
+            "name": "offer1",
+            "img": "img",
+            "action": "store"
+        }
+    ],
+    
+    "promotedSection": {
+        "id": 1,
+        "name": "promotedSection",
+        "img": "img",
+        "action": "store"
+    },
+    
+    "dynamicSections": [
+        {
+            "id": 1,
+            "type": "products",
+            "title": "Moda Firsatlar",
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Macsylen Su ve Rüzgar Geçirmez İçi Kürklü Mont",
+                    "img": "product1",
+                    "price": 1200,
+                    "discount": 889
+                },
+                {
+                    "id": 2,
+                    "name": "Stil Kombin Renkli Fermuarlı Yağmurluk Mevsimlik PLDP 2920",
+                    "img": "product2",
+                    "price": 748.50,
+                    "discount": 449
+                },
+                {
+                    "id": 3,
+                    "name": "Kadın İçi Astarlı Kapüşonlu Su ve Rüzgar Geçirmez Şişme Kışlık Mont BDM-400",
+                    "img": "product3",
+                    "price": 659
+                },
+                {
+                    "id": 4,
+                    "name": "Stil Kombin Düz Büyük Kareli Kışlık Oduncu Gömlek XC 16752A",
+                    "img": "product4",
+                    "price": 328.50,
+                    "discount": 219
+                },
+                {
+                    "id": 5,
+                    "name": "DeFacto Regular Fit Çizgili Bisiklet Yaka Pike Hırka A4881AX23WNRD59",
+                    "img": "product5",
+                    "price": 349.99
+                },
+                {
+                    "id": 6,
+                    "name": "Mero Life Erkek Siyah Kapüşonlu Su ve Rüzgar Geçirmez Softshell Mont",
+                    "img": "product6",
+                    "price": 1299,
+                    "discount": 899
+                },
+                {
+                    "id": 7,
+                    "name": "Erkek Siyah Yeni Sezon Çapraz Fermuarlı Deri Ceket Mont",
+                    "img": "product7",
+                    "price": 999.90,
+                    "discount": 699
+                },
+                {
+                    "id": 8,
+                    "name": "Avva Erkek Siyah Dik Yaka Lightweight Rüzgar Geçirmez Comfort Fit Rahat Kesim Şişme Spor Mont E006000",
+                    "img": "product8",
+                    "price": 1499.99
+                },
+                {
+                    "id": 9,
+                    "name": "Luc Kaz Tüyü Erkek Mont Siyah",
+                    "img": "product9",
+                    "price": 2799.99
+                },
+                {
+                    "id": 10,
+                    "name": "Rıders By Lee Gri Erkek Polar Sweatshirt L222717*003 Tam Fermuarlı Polar",
+                    "img": "product10",
+                    "price": 349.99,
+                    "discount": 999
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "type": "banners",
+            "title": "Banner Section1",
+            "banners": [
+                {
+                    "id": 1,
+                    "name": "",
+                    "img": "banner1",
+                    "action": "store"
+                },
+                {
+                    "id": 2,
+                    "name": "",
+                    "img": "banner2",
+                    "action": "store"
+                },
+                {
+                    "id": 3,
+                    "name": "",
+                    "img": "banner3",
+                    "action": "store"
+                },
+                {
+                    "id": 4,
+                    "name": "",
+                    "img": "banner4",
+                    "action": "store"
+                },
+                {
+                    "id": 5,
+                    "name": "",
+                    "img": "banner5",
+                    "action": "store"
+                },
+                {
+                    "id": 6,
+                    "name": "",
+                    "img": "banner6",
+                    "action": "store"
+                },
+                {
+                    "id": 7,
+                    "name": "",
+                    "img": "banner7",
+                    "action": "store"
+                },
+                {
+                    "id": 8,
+                    "name": "",
+                    "img": "banner8",
+                    "action": "store"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "type": "products",
+            "title": "Cep Telefonu",
+            "products": [
+                {
+                    "id": 11,
+                    "name": "Apple iPhone 15 128 6 GB RAM 5G (Apple Türkiye Garantili)",
+                    "img": "product11",
+                    "price": 52999
+                },
+                {
+                    "id": 12,
+                    "name": "Xiaomi Redmi Note 12 Pro Mavi 256 GB 8 GB Ram Akıllı Telefon (Xiaomi Türkiye Garantili)",
+                    "img": "product12",
+                    "price": 13999,
+                    "discount": 12629
+                },
+                {
+                    "id": 13,
+                    "name": "INFINIZ GT10 PRO 8 GB RAM + 8 GB Sanal Ram 256 108MP Cep Telefonu",
+                    "img": "product13",
+                    "price": 18949
+                },
+                {
+                    "id": 14,
+                    "name": "Samsung Galaxy A14 Gümüş 128 GB 4 GB Ram Akıllı Telefon (Samsung Türkiye Garantili)",
+                    "img": "product14",
+                    "price": 7199
+                },
+                {
+                    "id": 15,
+                    "name": "Samsung Galaxy S23 Krem 256 GB 8 GB Ram Akıllı Telefon (Samsung Türkiye Garantili)",
+                    "img": "product15",
+                    "price": 34999,
+                    "discount": 30189
+                },
+                {
+                    "id": 16,
+                    "name": "Apple iPhone 14 Pro Altın 128 GB 6 GB Ram Akıllı Telefon (Apple Türkiye Garantili)",
+                    "img": "product16",
+                    "price": 67000,
+                    "discount": 65675
+                },
+                {
+                    "id": 17,
+                    "name": "Samsung Galaxy A54 5G Beyaz 256 GB 8 GB Ram Akıllı Telefon (Samsung Türkiye Garantili)",
+                    "img": "product17",
+                    "price": 16250,
+                    "discount": 16150
+                },
+                {
+                    "id": 18,
+                    "name": "Samsung Galaxy A24 128 GB 6 GB RAM Siyah",
+                    "img": "product18",
+                    "price": 8349
+                },
+                {
+                    "id": 19,
+                    "name": "Xiaomi Redmi 12C Mor 128 GB 4 GB Ram Akıllı Telefon (Xiaomi Türkiye Garantili)",
+                    "img": "product19",
+                    "price": 5799
+                },
+                {
+                    "id": 20,
+                    "name": "Vivo V29 Lite 256 GB 8 GB (Vivo Türkiye Garantili) Flare Black",
+                    "img": "product20",
+                    "price": 13849
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "type": "banners",
+            "title": "Banner Section 2",
+            "banners": [
+                {
+                    "id": 9,
+                    "name": "",
+                    "img": "banner9",
+                    "action": "store"
+                },
+                {
+                    "id": 10,
+                    "name": "",
+                    "img": "banner10",
+                    "action": "store"
+                },
+                {
+                    "id": 11,
+                    "name": "",
+                    "img": "banner11",
+                    "action": "store"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "type": "products",
+            "title": "Telefon Aksesuari",
+            "products": [
+                {
+                    "id": 21,
+                    "name": "King Power 10.000 Mah Taşınabilir Şarj Cihazı KGP-110",
+                    "img": "product21",
+                    "price": 620
+                },
+                {
+                    "id": 22,
+                    "name": "Huaewi FreeBuds SE TWS Beyaz Kulak İçi Bluetooth Kulaklık",
+                    "img": "product22",
+                    "price": 649
+                },
+                {
+                    "id": 23,
+                    "name": "Xiaomi Mi Outdoor Bluetooth Mini Hoparlör",
+                    "img": "product23",
+                    "price": 599
+                },
+                {
+                    "id": 24,
+                    "name": "Xiaomi Mi Band 7 Akıllı Bileklik Siyah",
+                    "img": "product24",
+                    "price": 849
+                },
+                {
+                    "id": 25,
+                    "name": "Oppo Realme TechLife Watch S100 Siyah Akıllı Saat",
+                    "img": "product25",
+                    "price": 1070
+                },
+                {
+                    "id": 26,
+                    "name": "QCY H2 Bluetoothlu Kulaklık Siyah",
+                    "img": "product26",
+                    "price": 579
+                },
+                {
+                    "id": 27,
+                    "name": "Apple 5W USB Güç Adaptörü MGN13TU/A",
+                    "img": "product27",
+                    "price": 318.66
+                },
+                {
+                    "id": 28,
+                    "name": "Tecno Buds2 Earphone Siyah",
+                    "img": "product28",
+                    "price": 319.92
+                },
+                {
+                    "id": 29,
+                    "name": "Infinix XE22 TWS Beyaz Bluetooth Kulaklık",
+                    "img": "product29",
+                    "price": 361.77
+                },
+                {
+                    "id": 30,
+                    "name": "Xiaomi Mi Watch 2 Lite Mavi",
+                    "img": "product30",
+                    "price": 1174.06
+                },
+                {
+                    "id": 31,
+                    "name": "Xiaomi Redmi Watch 3 Active Akıllı Saat",
+                    "img": "product31",
+                    "price": 1963.66
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "type": "banners",
+            "title": "Banner Section 3",
+            "banners": [
+                {
+                    "id": 12,
+                    "name": "",
+                    "img": "banner12",
+                    "action": "store"
+                },
+                {
+                    "id": 13,
+                    "name": "",
+                    "img": "banner13",
+                    "action": "store"
+                },
+                {
+                    "id": 14,
+                    "name": "",
+                    "img": "banner14",
+                    "action": "store"
+                }
+            ]
+        }
+    ]
+}
+
+

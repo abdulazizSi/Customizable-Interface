@@ -1,5 +1,5 @@
 //
-//  BannerModel.swift
+//  MenuItemModel.swift
 //  Customizable Interface
 //
 //  Created by Abdulaziz Alsikh on 22.10.2023.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BannerModel: Hashable {
+struct MenuItemModel: Decodable, Hashable {
     let id: Int
     
     let name: String
@@ -17,7 +17,7 @@ struct BannerModel: Hashable {
     let action: BannerActionTypes
 }
 
-enum BannerActionTypes {
+enum BannerActionTypes: String, Decodable {
     case category
     case store
     case product
