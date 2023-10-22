@@ -36,7 +36,7 @@ class HomeViewModel {
     private func layoutConfiguration() -> UICollectionViewCompositionalLayoutConfiguration {
         let config = UICollectionViewCompositionalLayoutConfiguration()
         
-        config.interSectionSpacing = 35
+        config.interSectionSpacing = 16
         
         return config
     }
@@ -77,7 +77,7 @@ class HomeViewModel {
             dynamicSections.forEach { section in
                 switch section.type {
                 case .products:
-                    sections.append(ProductsSection(type: .products(id: section.id)))
+                    sections.append(ProductsSection(type: .products(id: section.id, title: section.title)))
                 case .banners:
                     sections.append(BannersSection(type: .banners(id: section.id)))
                 }
@@ -120,7 +120,7 @@ class HomeViewModel {
                 snapshot.appendSections([section.type])
                 snapshot.appendItems(banners.map{.menuItem($0)}, toSection: section.type)
                 
-            case .products(let id):
+            case .products(let id, _):
                 guard let productsSection = data.dynamicSections?.first(where: { $0.id == id}),
                       let products = productsSection.products
                 else {return}

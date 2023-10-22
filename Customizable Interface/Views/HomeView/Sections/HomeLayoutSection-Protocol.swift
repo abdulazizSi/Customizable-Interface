@@ -29,7 +29,7 @@ enum HomeSection: Hashable {
     case promotedSection
     case offers
     case stores
-    case products(id: Int)
+    case products(id: Int, title: String)
     case banners(id: Int)
 }
 

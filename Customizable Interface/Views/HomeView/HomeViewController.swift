@@ -25,7 +25,7 @@ class HomeViewController: ViewController<HomeView> {
         navigationItem.searchController = mainView.searchController
         
         navigationItem.largeTitleDisplayMode = .always
-        navigationItem.hidesSearchBarWhenScrolling = true
+        navigationItem.hidesSearchBarWhenScrolling = false
         
         
         mainView.collectionView.delegate = self
@@ -33,9 +33,6 @@ class HomeViewController: ViewController<HomeView> {
         mainView.collectionView.collectionViewLayout = viewModel.createLayout()
         
         viewModel.createDataSource(collectionView: mainView.collectionView)
-        
-        dump(viewModel.data)
-        
     }
     
     

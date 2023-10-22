@@ -13,7 +13,7 @@ class TitleHeaderView: UIView {
     let titleLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
-        label.font = .systemFont(ofSize: 17)
+        label.font = .systemFont(ofSize: 17, weight: .medium)
         return label
     }()
     
