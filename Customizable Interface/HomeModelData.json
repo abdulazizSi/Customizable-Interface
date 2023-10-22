@@ -152,7 +152,7 @@
         {
             "id": 1,
             "type": "products",
-            "title": "Moda Firsatlar",
+            "title": "Moda Fırsatları",
             "products": [
                 {
                     "id": 1,
@@ -280,7 +280,7 @@
         {
             "id": 3,
             "type": "products",
-            "title": "Cep Telefonu",
+            "title": "Cep Telefonu Fırsatları",
             "products": [
                 {
                     "id": 11,
@@ -376,7 +376,7 @@
         {
             "id": 5,
             "type": "products",
-            "title": "Telefon Aksesuari",
+            "title": "Telefon Aksesuarları",
             "products": [
                 {
                     "id": 21,
