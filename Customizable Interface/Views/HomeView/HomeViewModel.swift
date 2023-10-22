@@ -51,11 +51,13 @@ class HomeViewModel {
         datasource.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in
             self?.sections[indexPath.section].supplementary(collectionView, kind: kind, indexPath)
         }
+        
+        reloadSections()
     }
  
     /// Reload sections data
     private func reloadSections() {
-        if data.mainMenu.isEmptyOrNil {
+        if !data.mainMenu.isEmptyOrNil {
             sections.append(MenuSection())
         }
 
@@ -63,11 +65,11 @@ class HomeViewModel {
             sections.append(PromotedSection())
         }
                     
-        if data.offers.isEmptyOrNil {
+        if !data.offers.isEmptyOrNil {
             sections.append(OffersSection())
         }
         
-        if data.stores.isEmptyOrNil {
+        if !data.stores.isEmptyOrNil {
             sections.append(StoresSection())
         }
         
@@ -126,6 +128,8 @@ class HomeViewModel {
                 snapshot.appendItems(products.map{.product($0)}, toSection: section.type)            
             }
         }
+        
+        datasource.apply(snapshot)
     }
     
     

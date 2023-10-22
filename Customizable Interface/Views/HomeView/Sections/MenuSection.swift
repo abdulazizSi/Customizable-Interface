@@ -15,18 +15,24 @@ struct MenuSection: HomeLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(40))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        let spacing: CGFloat = 6
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(110))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 4)
+        group.interItemSpacing = .fixed(spacing)
         
         let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .none
+        section.interGroupSpacing = spacing
+        section.contentInsets = .init(top: 0, leading: 16, bottom: 0, trailing: 16)
         
         return section
     }
     
     
-    let cellRegistration = UICollectionView.CellRegistration<UICollectionViewCell, HomeSectionItemWarper> { cell, indexPath, itemIdentifier in
-        if case .menuItem(let banner) = itemIdentifier {
-            
+    let cellRegistration = UICollectionView.CellRegistration<MenuItemCell, HomeSectionItemWarper> { cell, indexPath, itemIdentifier in
+        if case .menuItem(let item) = itemIdentifier {
+            cell.configure(item)
         }
     }
     
