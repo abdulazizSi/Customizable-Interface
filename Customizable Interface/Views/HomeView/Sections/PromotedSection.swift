@@ -12,19 +12,7 @@ struct PromotedSection: HomeLayoutSection {
     var type: HomeSection = .promotedSection
     
     var layoutSection: NSCollectionLayoutSection {
-        let height = NSCollectionLayoutDimension.absolute(180)
-        
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: height)
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: height)
-        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
-        
-        let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = .init(top: 0, leading: 16, bottom: 0, trailing: 16)
-        section.interGroupSpacing = 6
-        
-        return section
+        .bannerLayoutSection()
     }
     
     

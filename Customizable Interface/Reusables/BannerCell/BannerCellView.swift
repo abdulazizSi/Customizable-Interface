@@ -18,13 +18,6 @@ class BannerCellView: UIView {
         return imageView
     }()
     
-    lazy var mainVStackView: UIStackView = {
-        let stack = UIStackView(arrangedSubviews: [imageView])
-        stack.axis = .vertical
-        stack.spacing = .zero
-        return stack
-    }()
-    
     //MARK: - Initialization
     init() {
         super.init(frame: .zero)
@@ -43,13 +36,13 @@ class BannerCellView: UIView {
     }
     
     private func setupSubviews() {
-        addSubview(mainVStackView)
+        addSubview(imageView)
         
     }
     
     //MARK: - Constraint
     private func layoutConstraint() {
-        mainVStackView.fillToSuperview(.fullSpace())
+        imageView.fillToSuperview(.fullSpace())
     }
 }
 

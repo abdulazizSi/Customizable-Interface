@@ -18,15 +18,12 @@ struct StoresSection: HomeLayoutSection {
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.27), heightDimension: .absolute(75))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         
-        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(20))
-        let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
-
-        
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuous
         section.contentInsets = .init(top: 0, leading: 16, bottom: 0, trailing: 16)
         section.interGroupSpacing = 6
-        section.boundarySupplementaryItems = [header]
+        
+        section.addTitleHeader()
         
         return section
     }

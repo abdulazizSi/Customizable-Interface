@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		894D5E272AE7069F0010FCF4 /* NSCollectionLayoutSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894D5E262AE7069F0010FCF4 /* NSCollectionLayoutSection.swift */; };
 		896AF6A72AE404FC00B8F3C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF6A62AE404FC00B8F3C7 /* AppDelegate.swift */; };
 		896AF6A92AE404FC00B8F3C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF6A82AE404FC00B8F3C7 /* SceneDelegate.swift */; };
 		896AF6AB2AE404FC00B8F3C7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896AF6AA2AE404FC00B8F3C7 /* HomeViewController.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		894D5E262AE7069F0010FCF4 /* NSCollectionLayoutSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCollectionLayoutSection.swift; sourceTree = "<group>"; };
 		896AF6A32AE404FC00B8F3C7 /* Customizable Interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Customizable Interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		896AF6A62AE404FC00B8F3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		896AF6A82AE404FC00B8F3C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				896AF6EF2AE48BF700B8F3C7 /* Bundle-decode.swift */,
 				896AF7102AE5762F00B8F3C7 /* UIImage-resizeImage.swift */,
 				89D620492AE691E4009B7F7B /* Double-asCurrency.swift */,
+				894D5E262AE7069F0010FCF4 /* NSCollectionLayoutSection.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				896AF7142AE5782E00B8F3C7 /* ProductCellView.swift in Sources */,
 				896AF70A2AE56E4B00B8F3C7 /* StoreCell.swift in Sources */,
 				896AF6A72AE404FC00B8F3C7 /* AppDelegate.swift in Sources */,
+				894D5E272AE7069F0010FCF4 /* NSCollectionLayoutSection.swift in Sources */,
 				896AF6E82AE4821400B8F3C7 /* MenuSection.swift in Sources */,
 				896AF6FB2AE5391700B8F3C7 /* GenericCollectionViewCell.swift in Sources */,
 				896AF6BC2AE407CE00B8F3C7 /* GenericViewController.swift in Sources */,
