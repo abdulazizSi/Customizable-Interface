@@ -23,7 +23,6 @@ class HomeViewController: ViewController<HomeView> {
         
         navigationItem.searchController = mainView.searchController
         
-        navigationItem.largeTitleDisplayMode = .always
         navigationItem.hidesSearchBarWhenScrolling = false
         
         

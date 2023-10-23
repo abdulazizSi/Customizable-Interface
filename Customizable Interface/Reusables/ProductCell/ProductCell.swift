@@ -8,6 +8,13 @@
 import UIKit
 
 class ProductCell: CollectionViewCell<ProductCellView> {
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        mainView.imageView.image = nil
+        mainView.titleLabel.text = nil
+        mainView.priceLabel.text = nil
+    }
+    
     func configure(_ product: ProductModel) {
         let image = UIImage(named: product.img)?.resizeImage(targetSize: contentView.bounds.size)
         mainView.imageView.image = image
@@ -20,7 +27,7 @@ class ProductCell: CollectionViewCell<ProductCellView> {
     private func setPrice(_ product: ProductModel) {
         if let discount = product.discount {
             mainView.oldPrice.isHidden = false
-            let formattedPriceString = String(format: "%.2f", product.price) + "TL"
+            let formattedPriceString = product.price.asCurrency
             mainView.oldPrice.text = formattedPriceString
             let attributedString = NSAttributedString(string: formattedPriceString,
                                                       attributes: [NSAttributedString.Key.strikethroughStyle: NSUnderlineStyle.single.rawValue])
@@ -37,7 +44,7 @@ class ProductCell: CollectionViewCell<ProductCellView> {
     private func formatePrice(price: Double) {
         let priceString = String(Int(price))
 
-        let formattedPriceString = String(format: "%.2f", price) + "TL"
+        let formattedPriceString = price.asCurrency
         let attributedString = NSMutableAttributedString(string: formattedPriceString)
         
         // Find the range of the price in the attributed string

@@ -19,7 +19,7 @@ struct OffersSection: HomeLayoutSection {
     init(type: HomeSection, numberOfItems: Int) {
         self.type = type
         
-        let notificationId: Notification.Name = .init("offerSection.footer.id.\(UUID())")
+        let notificationId: Notification.Name = .init("offersSection.footer.id.\(UUID())")
         
         self.notificationId = notificationId
         

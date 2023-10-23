@@ -114,14 +114,14 @@ class HomeViewModel {
                 snapshot.appendItems([.menuItem(promotedSection)], toSection: section.type)
                 
             case .banners(let id):
-                guard let bannersSection = data.dynamicSections?.first(where: { $0.id == id}),
+                guard let bannersSection = data.dynamicSections?.first(where: {$0.id == id}),
                       let banners = bannersSection.banners
                 else {return}
                 snapshot.appendSections([section.type])
                 snapshot.appendItems(banners.map{.menuItem($0)}, toSection: section.type)
                 
             case .products(let id, _):
-                guard let productsSection = data.dynamicSections?.first(where: { $0.id == id}),
+                guard let productsSection = data.dynamicSections?.first(where: {$0.id == id}),
                       let products = productsSection.products
                 else {return}
                 snapshot.appendSections([section.type])
@@ -148,8 +148,18 @@ class HomeViewModel {
         case let .store(store):
             print(store) /// Show store details
             
-        case let .menuItem(banner):
-            print(banner) /// Show banner details
+        case let .menuItem(item):
+            print(item) /// Check the item action and navigate accordingly
+            switch item.action {
+            case .categories:
+                break
+            case .category:
+                break
+            case .store:
+                break
+            case .product:
+                break
+            }
         }
     }
 }

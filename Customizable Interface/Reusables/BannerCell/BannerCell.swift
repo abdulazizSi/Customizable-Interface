@@ -8,6 +8,11 @@
 import UIKit
 
 class BannerCell: CollectionViewCell<BannerCellView> {
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        mainView.imageView.image = nil
+    }
+    
     func configure(_ data: MenuItemModel) {
         let image = UIImage(named: data.img)?.resizeImage(targetSize: contentView.bounds.size)
         mainView.imageView.image = image

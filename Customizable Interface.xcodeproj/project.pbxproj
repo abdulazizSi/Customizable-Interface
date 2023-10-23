@@ -48,6 +48,7 @@
 		89D620432AE590F4009B7F7B /* MainMenuFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D620422AE590F4009B7F7B /* MainMenuFooter.swift */; };
 		89D620462AE5C3F1009B7F7B /* OffersFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D620452AE5C3F1009B7F7B /* OffersFooterView.swift */; };
 		89D620482AE5C41E009B7F7B /* OffersFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D620472AE5C41E009B7F7B /* OffersFooter.swift */; };
+		89D6204A2AE691E4009B7F7B /* Double-asCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D620492AE691E4009B7F7B /* Double-asCurrency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		89D620422AE590F4009B7F7B /* MainMenuFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuFooter.swift; sourceTree = "<group>"; };
 		89D620452AE5C3F1009B7F7B /* OffersFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersFooterView.swift; sourceTree = "<group>"; };
 		89D620472AE5C41E009B7F7B /* OffersFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersFooter.swift; sourceTree = "<group>"; };
+		89D620492AE691E4009B7F7B /* Double-asCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double-asCurrency.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				896AF6E12AE4399600B8F3C7 /* Optional-isEmptyOrNil.swift */,
 				896AF6EF2AE48BF700B8F3C7 /* Bundle-decode.swift */,
 				896AF7102AE5762F00B8F3C7 /* UIImage-resizeImage.swift */,
+				89D620492AE691E4009B7F7B /* Double-asCurrency.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				89D620432AE590F4009B7F7B /* MainMenuFooter.swift in Sources */,
 				896AF6DE2AE41FC800B8F3C7 /* HomeLayoutSection-Protocol.swift in Sources */,
 				89D620482AE5C41E009B7F7B /* OffersFooter.swift in Sources */,
+				89D6204A2AE691E4009B7F7B /* Double-asCurrency.swift in Sources */,
 				896AF7142AE5782E00B8F3C7 /* ProductCellView.swift in Sources */,
 				896AF70A2AE56E4B00B8F3C7 /* StoreCell.swift in Sources */,
 				896AF6A72AE404FC00B8F3C7 /* AppDelegate.swift in Sources */,
