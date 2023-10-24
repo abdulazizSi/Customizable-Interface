@@ -18,13 +18,13 @@ This flexibility makes the app adaptable to various content requirements without
 
 
 ## Full Demo
-<img src="https://github.com/abdulazizSi/Customizable-Interface/blob/main/gif/fullLayout.gif" width="250" height="500"> 
+<img src="https://github.com/abdulazizSi/Customizable-Interface/blob/main/gif/fullLayout.gif" width="250" height="500"> &nbsp;&nbsp;&nbsp; <img src="https://github.com/abdulazizSi/Customizable-Interface/blob/main/gif/gridSection.png" width="250" height="500">
 
-## Horizantal Scrolling Sections
+## Horizontal Scrolling Sections
 <img src="https://github.com/abdulazizSi/Customizable-Interface/blob/main/gif/productSection.gif" width="250" height="500"> &nbsp;&nbsp;&nbsp; <img src="https://github.com/abdulazizSi/Customizable-Interface/blob/main/gif/storeSection.gif" width="250" height="500">
 
 ## Slider With Pager
-<img src="https://github.com/abdulazizSi/Customizable-Interface/blob/main/gif/sliderSection.gif" width="250" height="500"> 
+<img src="https://github.com/abdulazizSi/Customizable-Interface/blob/main/gif/sliderSection.gif" width="250" height="500"> &nbsp;&nbsp;&nbsp; <img src="https://github.com/abdulazizSi/Customizable-Interface/blob/main/gif/horizontalSections.png" width="250" height="500">
 
 ## Super Clean impelemntation
 Creating of the data source
