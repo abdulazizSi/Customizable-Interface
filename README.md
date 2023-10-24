@@ -6,6 +6,7 @@ However, the dynamic sections, such as ProductsSection and BannersSection, allow
 
 ## Features
 - Programatic UI
+- MVVM
 - UICollectionViewCompositionalLayout
 - UICollectionViewDiffableDataSource
 - Supplementary Views (Header + Footer)
